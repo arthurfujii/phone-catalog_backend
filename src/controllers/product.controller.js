@@ -31,7 +31,6 @@ const getByCategory = async (req, res) => {
 const getById = async (req, res) => {
   const { productId } = req.params;
   const product = await productService.getById(productId);
-  console.log(product);
 
   if (!product) {
     return res.status(404).send('Product not found');

@@ -56,7 +56,6 @@ const getById = async (productId) => {
     attributes: attributes,
     raw: true,
   });
-  // console.log(product);
   return product;
 };
 
